@@ -1,0 +1,3827 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rupa &amp; Naresh | Wedding Celebration</title>
+<meta name="description" content="Join Rupa and Naresh as they begin their beautiful journey together on March 9, 2027, at Raja Gopala Swamy Temple, Narsapur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>/* ════════════════════════════════════════════════════════════
+   RUPA & NARESH — Premium Wedding Website Styles
+   ════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Color palette */
+  --blush-pink: #F4D5DC;
+  --soft-lavender: #DCD5F2;
+  --warm-white: #FFFDFB;
+  --peach: #F7D6C5;
+  --beige: #E9D8C5;
+  --champagne-gold: #D4AF6A;
+  --deep-rose: #874F64;
+  --charcoal: #443B43;
+  --soft-sage: #C8D8C1;
+
+  /* Extended ramps */
+  --primary-50: #FDF2F4;
+  --primary-100: #F4D5DC;
+  --primary-300: #E8A8B8;
+  --primary-500: #C97890;
+  --primary-700: #874F64;
+  --primary-900: #5C3340;
+
+  --accent-50: #FBF6EC;
+  --accent-100: #F0E6D0;
+  --accent-300: #D4AF6A;
+  --accent-500: #B8923F;
+  --accent-700: #8C6E2E;
+
+  --success-100: #D4EDDA;
+  --success-500: #28A745;
+  --warning-100: #FFF3CD;
+  --warning-500: #E8A838;
+  --error-100: #F8D7DA;
+  --error-500: #C0392B;
+
+  --neutral-50: #FAF8F6;
+  --neutral-100: #F5F0EB;
+  --neutral-200: #E9D8C5;
+  --neutral-400: #A89B96;
+  --neutral-600: #6B5F63;
+  --neutral-800: #443B43;
+
+  /* Fonts */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-script: 'Great Vibes', cursive;
+
+  /* Spacing (8px system) */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-10: 5rem;
+  --space-12: 6rem;
+
+  /* Transitions */
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(68, 59, 67, 0.06);
+  --shadow-md: 0 4px 20px rgba(68, 59, 67, 0.1);
+  --shadow-lg: 0 10px 40px rgba(68, 59, 67, 0.12);
+  --shadow-gold: 0 0 30px rgba(212, 175, 106, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--warm-white);
+  color: var(--charcoal);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--deep-rose);
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: var(--champagne-gold);
+  text-decoration: none;
+  transition: color 0.3s var(--ease);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ═══ Layout ═══ */
+.section {
+  padding: var(--space-12) var(--space-2);
+  position: relative;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+  text-align: center;
+  margin-bottom: var(--space-2);
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--neutral-600);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-6);
+}
+
+.script-text {
+  font-family: var(--font-script);
+  font-size: 1.5em;
+  color: var(--champagne-gold);
+}
+
+/* ═══ Gold Divider ═══ */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin: var(--space-4) auto;
+  max-width: 300px;
+}
+.gold-divider::before,
+.gold-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--champagne-gold), transparent);
+}
+.gold-divider span {
+  font-size: 1.2rem;
+  color: var(--champagne-gold);
+}
+
+/* ═══ Buttons ═══ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.35s var(--ease);
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  letter-spacing: 0.02em;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--deep-rose), var(--primary-500));
+  color: var(--warm-white);
+  border-color: var(--deep-rose);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+  background: linear-gradient(135deg, var(--primary-500), var(--deep-rose));
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--deep-rose);
+  border-color: var(--champagne-gold);
+}
+.btn-outline:hover {
+  background: var(--accent-50);
+  border-color: var(--deep-rose);
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--champagne-gold), var(--accent-500));
+  color: var(--warm-white);
+  border-color: var(--champagne-gold);
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* ═══ Navigation ═══ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: var(--space-2) var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.4s var(--ease);
+}
+
+.navbar.scrolled {
+  background: rgba(255, 253, 251, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-1) var(--space-4);
+}
+
+.nav-logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--deep-rose);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  z-index: 1001;
+}
+.nav-logo .heart {
+  color: var(--champagne-gold);
+  font-size: 0.9em;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-3);
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--charcoal);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 0.25rem 0;
+  transition: color 0.3s var(--ease);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--champagne-gold);
+  transition: width 0.3s var(--ease);
+}
+
+.nav-links a:hover {
+  color: var(--deep-rose);
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--deep-rose);
+  border-radius: 2px;
+  transition: all 0.3s var(--ease);
+}
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ═══ Hero ═══ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: url('home-bg.webp') center center / cover no-repeat;
+}
+
+.hero-decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: var(--space-8) var(--space-2);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 400;
+  color: var(--deep-rose);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+.hero-title .amp {
+  font-family: var(--font-script);
+  color: var(--champagne-gold);
+  font-size: 0.8em;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--neutral-600);
+  margin-bottom: var(--space-3);
+  max-width: 450px;
+}
+
+.hero-invitation {
+  font-style: italic;
+  color: var(--neutral-600);
+  margin-bottom: var(--space-4);
+  max-width: 450px;
+  font-size: 1rem;
+}
+
+.hero-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+.hero-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.hero-detail .label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+}
+.hero-detail .value {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--deep-rose);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.hero-illustration-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-illustration-wrapper .hero-photo {
+  width: 350px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 20px;
+  filter: drop-shadow(0 10px 40px rgba(135, 79, 100, 0.15));
+}
+
+.hero-illustration-wrapper .hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Floating hearts animation */
+.float-heart {
+  animation: floatUp 6s ease-in-out infinite;
+}
+.float-heart:nth-child(2) { animation-delay: 1s; }
+.float-heart:nth-child(3) { animation-delay: 2s; }
+.float-heart:nth-child(4) { animation-delay: 3s; }
+.float-heart:nth-child(5) { animation-delay: 4s; }
+.float-heart:nth-child(6) { animation-delay: 5s; }
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.4; }
+  50% { transform: translateY(-15px) scale(1.1); opacity: 0.7; }
+}
+
+/* ═══ Love Story Timeline ═══ */
+.story-section {
+  background: linear-gradient(180deg, var(--warm-white), var(--primary-50));
+}
+
+.story-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-8);
+  font-size: 1.15rem;
+  color: var(--neutral-600);
+  font-style: italic;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-4) 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, var(--champagne-gold), var(--champagne-gold), transparent);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-6);
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  justify-content: flex-end;
+}
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
+  margin-right: var(--space-6);
+}
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: var(--space-6);
+}
+
+.timeline-content {
+  width: 45%;
+  background: var(--warm-white);
+  padding: var(--space-3);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(212, 175, 106, 0.15);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.timeline-content:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.timeline-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: var(--space-1);
+  color: var(--deep-rose);
+}
+
+.timeline-content .timeline-date {
+  font-size: 0.8rem;
+  color: var(--champagne-gold);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-1);
+  font-weight: 500;
+}
+
+.timeline-content p {
+  font-size: 0.95rem;
+  color: var(--neutral-600);
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: var(--warm-white);
+  border: 2px solid var(--champagne-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: var(--shadow-sm);
+}
+.timeline-marker svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--deep-rose);
+}
+
+/* ═══ Wedding Events ═══ */
+.events-section {
+  background: linear-gradient(180deg, var(--primary-50), var(--warm-white));
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.event-card {
+  background: var(--warm-white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(212, 175, 106, 0.15);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+  display: flex;
+  flex-direction: column;
+}
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.event-illustration {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.event-illustration svg {
+  height: 100%;
+  width: 100%;
+}
+
+/* Event photo - show the full image */
+.event-photo {
+  width: 100% !important;
+  height: 200px !important;
+  overflow: hidden !important;
+  border-radius: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fdf8f2;
+}
+
+.event-photo img {
+  width: 100% !important;
+  height: 200px !important;
+  max-width: 100% !important;
+  max-height: 200px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block;
+}
+.event-body {
+  padding: var(--space-3);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-name {
+  font-size: 1.6rem;
+  color: var(--deep-rose);
+  margin-bottom: var(--space-1);
+}
+
+.event-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--neutral-600);
+  margin-bottom: 0.4rem;
+}
+.event-detail-row svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--champagne-gold);
+}
+
+.event-description {
+  font-size: 0.85rem;
+  color: var(--neutral-600);
+  margin-top: var(--space-1);
+  font-style: italic;
+  flex: 1;
+}
+
+.event-add-calendar {
+  margin-top: var(--space-2);
+  font-size: 0.8rem;
+  color: var(--champagne-gold);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.event-add-calendar svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.event-add-calendar:hover {
+  color: var(--deep-rose);
+}
+
+/* ═══ Countdown ═══ */
+.countdown-section {
+  background: linear-gradient(170deg, var(--soft-lavender), var(--primary-50));
+}
+
+.countdown-card {
+  background: rgba(255, 253, 251, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 106, 0.2);
+  border-radius: 24px;
+  padding: var(--space-6);
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-4);
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px;
+}
+
+.countdown-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 600;
+  color: var(--deep-rose);
+  line-height: 1;
+  background: var(--warm-white);
+  border-radius: 16px;
+  width: 100%;
+  padding: var(--space-2) 0;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(212, 175, 106, 0.15);
+}
+
+.countdown-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+  margin-top: var(--space-1);
+  font-weight: 500;
+}
+
+.countdown-celebrate {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--deep-rose);
+  padding: var(--space-4);
+  text-align: center;
+}
+
+/* ═══ Scratch Card ═══ */
+.scratch-section {
+  background: linear-gradient(170deg, var(--blush-pink), var(--warm-white));
+}
+
+.scratch-card-container {
+  max-width: 450px;
+  margin: var(--space-4) auto;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, var(--blush-pink), var(--peach));
+  border: 2px solid var(--champagne-gold);
+}
+
+.scratch-hidden {
+  padding: var(--space-6);
+  text-align: center;
+  position: relative;
+}
+
+.scratch-hidden .hidden-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+  margin-bottom: var(--space-2);
+}
+
+.scratch-hidden .hidden-date {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--deep-rose);
+  margin-bottom: var(--space-1);
+}
+
+.scratch-hidden .hidden-time {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--champagne-gold);
+}
+
+.scratch-hidden .corner-deco {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+}
+.scratch-hidden .corner-deco.tl { top: 8px; left: 8px; }
+.scratch-hidden .corner-deco.tr { top: 8px; right: 8px; transform: scaleX(-1); }
+.scratch-hidden .corner-deco.bl { bottom: 8px; left: 8px; transform: scaleY(-1); }
+.scratch-hidden .corner-deco.br { bottom: 8px; right: 8px; transform: scale(-1, -1); }
+
+.scratch-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  z-index: 2;
+}
+
+.scratch-reveal-btn {
+  display: block;
+  margin: var(--space-2) auto 0;
+  font-size: 0.85rem;
+  color: var(--neutral-600);
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s var(--ease);
+}
+.scratch-reveal-btn:hover {
+  color: var(--deep-rose);
+}
+
+/* ═══ Gallery ═══ */
+.gallery-section {
+  background: linear-gradient(180deg, var(--warm-white), var(--neutral-50));
+}
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-4);
+}
+
+.gallery-filter {
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--neutral-600);
+  background: var(--warm-white);
+  border: 1px solid rgba(212, 175, 106, 0.2);
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+}
+.gallery-filter:hover {
+  border-color: var(--champagne-gold);
+  color: var(--deep-rose);
+}
+.gallery-filter.active {
+  background: linear-gradient(135deg, var(--deep-rose), var(--primary-500));
+  color: var(--warm-white);
+  border-color: var(--deep-rose);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-2);
+}
+
+.gallery-item {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-50), var(--accent-50));
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.gallery-placeholder .ph-icon {
+  font-size: 2rem;
+  color: var(--champagne-gold);
+  opacity: 0.4;
+}
+.gallery-placeholder .ph-label {
+  font-size: 0.75rem;
+  color: var(--neutral-400);
+  letter-spacing: 0.1em;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-item .gallery-cat {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem var(--space-2);
+  background: linear-gradient(transparent, rgba(68, 59, 67, 0.7));
+  color: var(--warm-white);
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s var(--ease);
+}
+.gallery-item:hover .gallery-cat {
+  opacity: 1;
+}
+
+/* ═══ Lightbox ═══ */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(68, 59, 67, 0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: 800px;
+  max-height: 80vh;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.lightbox-content img,
+.lightbox-content .gallery-placeholder {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--warm-white);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: var(--warm-white);
+  font-size: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s var(--ease);
+}
+.lightbox-prev { left: var(--space-2); }
+.lightbox-next { right: var(--space-2); }
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ═══ RSVP ═══ */
+.rsvp-section {
+  background: linear-gradient(170deg, var(--primary-50), var(--soft-lavender));
+}
+
+.rsvp-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--warm-white);
+  padding: var(--space-5);
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(212, 175, 106, 0.15);
+}
+
+.form-group {
+  margin-bottom: var(--space-3);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 0.4rem;
+}
+
+.form-label .required {
+  color: var(--error-500);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  border: 1.5px solid var(--neutral-200);
+  border-radius: 12px;
+  background: var(--neutral-50);
+  color: var(--charcoal);
+  transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--champagne-gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 106, 0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-error {
+  display: none;
+  font-size: 0.8rem;
+  color: var(--error-500);
+  margin-top: 0.3rem;
+}
+.form-error.show {
+  display: block;
+}
+
+.form-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.form-radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--neutral-200);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  font-size: 0.9rem;
+}
+.form-radio-item:has(input:checked) {
+  border-color: var(--champagne-gold);
+  background: var(--accent-50);
+  color: var(--deep-rose);
+}
+.form-radio-item input {
+  accent-color: var(--champagne-gold);
+}
+
+.form-submit-btn {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+  margin-top: var(--space-2);
+}
+
+.form-message {
+  text-align: center;
+  padding: var(--space-3);
+  border-radius: 12px;
+  margin-top: var(--space-2);
+  font-size: 0.95rem;
+  display: none;
+}
+.form-message.success {
+  display: block;
+  background: var(--success-100);
+  color: var(--success-500);
+}
+.form-message.error {
+  display: block;
+  background: var(--error-100);
+  color: var(--error-500);
+}
+
+/* ═══ Venue ═══ */
+.venue-section {
+  background: linear-gradient(180deg, var(--warm-white), var(--accent-50));
+}
+
+.venue-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--warm-white);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(212, 175, 106, 0.15);
+}
+
+.venue-info {
+  padding: var(--space-5);
+}
+
+.venue-info h3 {
+  font-size: 2rem;
+  margin-bottom: var(--space-2);
+}
+
+.venue-info-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: var(--space-2);
+  font-size: 1rem;
+  color: var(--neutral-600);
+}
+.venue-info-row svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--champagne-gold);
+}
+.venue-info-row .v-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+  display: block;
+}
+.venue-info-row .v-value {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--deep-rose);
+}
+
+.venue-map {
+  min-height: 350px;
+  position: relative;
+  background: var(--neutral-100);
+}
+.venue-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  min-height: 350px;
+}
+.venue-map-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-1);
+  height: 100%;
+  min-height: 350px;
+  color: var(--neutral-600);
+  text-align: center;
+  padding: var(--space-3);
+}
+
+/* ═══ Family ═══ */
+.family-section {
+  background: linear-gradient(170deg, var(--soft-lavender), var(--warm-white));
+}
+
+.family-sides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.family-side-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: var(--space-3);
+  color: var(--deep-rose);
+}
+
+.family-members {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.family-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--warm-white);
+  padding: var(--space-2);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(212, 175, 106, 0.15);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.family-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.family-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-50), var(--accent-50));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid var(--champagne-gold);
+}
+.family-photo svg {
+  width: 28px;
+  height: 28px;
+  color: var(--champagne-gold);
+  opacity: 0.5;
+}
+
+.family-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+  color: var(--deep-rose);
+}
+.family-info .relation {
+  font-size: 0.8rem;
+  color: var(--champagne-gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.family-info .message {
+  font-size: 0.85rem;
+  color: var(--neutral-600);
+  margin-top: 0.2rem;
+  font-style: italic;
+}
+
+/* ═══ Hashtag ═══ */
+.hashtag-section {
+  background: linear-gradient(170deg, var(--blush-pink), var(--peach));
+  text-align: center;
+}
+
+.hashtag-display {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 600;
+  color: var(--deep-rose);
+  margin: var(--space-3) 0;
+  letter-spacing: 0.02em;
+}
+
+.hashtag-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hashtag-copied {
+  display: none;
+  margin-top: var(--space-2);
+  font-size: 0.9rem;
+  color: var(--success-500);
+}
+.hashtag-copied.show {
+  display: block;
+}
+
+/* ═══ FAQ ═══ */
+.faq-section {
+  background: linear-gradient(180deg, var(--warm-white), var(--primary-50));
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: var(--space-1);
+  background: var(--warm-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(212, 175, 106, 0.1);
+  overflow: hidden;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--deep-rose);
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s var(--ease);
+}
+.faq-question:hover {
+  background: var(--primary-50);
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s var(--ease);
+  color: var(--champagne-gold);
+}
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s var(--ease);
+}
+.faq-answer-inner {
+  padding: 0 var(--space-3) var(--space-2);
+  font-size: 0.95rem;
+  color: var(--neutral-600);
+  line-height: 1.6;
+}
+
+/* ═══ Dress Code ═══ */
+.dress-section {
+  background: linear-gradient(170deg, var(--neutral-50), var(--warm-white));
+}
+
+.dress-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-2);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dress-card {
+  text-align: center;
+  padding: var(--space-3);
+  border-radius: 16px;
+  background: var(--warm-white);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(212, 175, 106, 0.1);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.dress-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.dress-card .dress-event {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--deep-rose);
+  margin-bottom: 0.3rem;
+}
+
+.dress-card .dress-suggestion {
+  font-size: 0.85rem;
+  color: var(--neutral-600);
+}
+
+/* ═══ Travel ═══ */
+.travel-section {
+  background: linear-gradient(180deg, var(--warm-white), var(--accent-50));
+}
+
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-2);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.travel-card {
+  padding: var(--space-3);
+  border-radius: 16px;
+  background: var(--warm-white);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(212, 175, 106, 0.1);
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.travel-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.travel-card .travel-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--accent-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--champagne-gold);
+}
+.travel-card .travel-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.travel-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: var(--deep-rose);
+}
+.travel-card p {
+  font-size: 0.85rem;
+  color: var(--neutral-600);
+}
+.travel-card h3 {
+  margin-bottom: 12px;
+}
+
+.travel-card p {
+  margin-top: 0;
+}
+/* ═══ Guestbook ═══ */
+.guestbook-section {
+  background: linear-gradient(170deg, var(--soft-lavender), var(--primary-50));
+}
+
+.guestbook-form {
+  max-width: 550px;
+  margin: 0 auto var(--space-4);
+  background: var(--warm-white);
+  padding: var(--space-4);
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(212, 175, 106, 0.15);
+}
+
+.guestbook-entries {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-2);
+}
+
+.guestbook-entry {
+  background: var(--warm-white);
+  padding: var(--space-3);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(212, 175, 106, 0.1);
+  transition: transform 0.3s var(--ease);
+}
+.guestbook-entry:hover {
+  transform: translateY(-3px);
+}
+
+.guestbook-entry .entry-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--space-1);
+}
+.guestbook-entry .entry-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-50), var(--accent-50));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--deep-rose);
+  flex-shrink: 0;
+}
+.guestbook-entry .entry-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--deep-rose);
+}
+.guestbook-entry .entry-reaction {
+  font-size: 1.2rem;
+}
+.guestbook-entry .entry-message {
+  font-size: 0.9rem;
+  color: var(--neutral-600);
+  line-height: 1.5;
+}
+.guestbook-entry .entry-date {
+  font-size: 0.75rem;
+  color: var(--neutral-400);
+  margin-top: 0.4rem;
+}
+
+.emoji-picker {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+.emoji-btn {
+  font-size: 1.3rem;
+  background: var(--neutral-50);
+  border: 1.5px solid var(--neutral-200);
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+  line-height: 1;
+}
+.emoji-btn:hover {
+  border-color: var(--champagne-gold);
+  transform: scale(1.15);
+}
+.emoji-btn.selected {
+  border-color: var(--champagne-gold);
+  background: var(--accent-50);
+}
+
+/* ═══ Thank You ═══ */
+.thank-you-section {
+  background: linear-gradient(170deg, var(--blush-pink), var(--primary-50), var(--warm-white));
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.thank-you-content {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.thank-you-content h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: var(--space-3);
+}
+
+.thank-you-content p {
+  font-size: 1.15rem;
+  color: var(--neutral-600);
+  margin-bottom: var(--space-4);
+  font-style: italic;
+}
+
+.thank-you-signature {
+  font-family: var(--font-script);
+  font-size: 3rem;
+  color: var(--deep-rose);
+  margin: var(--space-4) 0;
+}
+
+.thank-you-illustration {
+  max-width: 300px;
+  margin: var(--space-4) auto;
+}
+.thank-you-illustration img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--warm-white);
+  border: 1.5px solid var(--champagne-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s var(--ease);
+  color: var(--deep-rose);
+  box-shadow: var(--shadow-md);
+}
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.back-to-top:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* ═══ Footer ═══ */
+.footer {
+  padding: var(--space-4) var(--space-2);
+  text-align: center;
+  background: var(--charcoal);
+  color: var(--neutral-200);
+}
+.footer p {
+  font-size: 0.9rem;
+}
+.footer .footer-heart {
+  color: var(--champagne-gold);
+}
+
+/* ═══ Scroll Reveal ═══ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ═══ Responsive ═══ */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-4);
+  }
+  .hero-photo {
+  width: 280px;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 220px 220px 20px 20px;
+  margin: 0 auto;
+  }
+
+  .hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-subtitle, .hero-invitation {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-details {
+    justify-content: center;
+  }
+  .hero-cta {
+    justify-content: center;
+  }
+  .hero-illustration-wrapper svg {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-8) var(--space-2);
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 75%;
+    max-width: 320px;
+    background: rgba(255, 253, 251, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-4);
+    transition: right 0.4s var(--ease);
+    box-shadow: -10px 0 40px rgba(0,0,0,0.1);
+  }
+  .nav-links.open {
+    right: 0;
+  }
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    justify-content: flex-end;
+  }
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    width: 80%;
+    text-align: left;
+    margin-right: 0;
+    margin-left: var(--space-6);
+  }
+  .timeline-marker {
+    left: 20px;
+  }
+
+  .venue-card {
+    grid-template-columns: 1fr;
+  }
+
+  .family-sides {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown-timer {
+    gap: var(--space-1);
+  }
+  .countdown-unit {
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-illustration-wrapper svg {
+    max-width: 250px;
+  }
+  .countdown-unit {
+    min-width: 65px;
+  }
+  .countdown-number {
+    font-size: 2rem;
+  }
+  .lightbox-prev,
+  .lightbox-next {
+    padding: 0.6rem 0.9rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* ═══ Reduced Motion ═══ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .float-heart {
+    animation: none;
+  }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>// ===== src/config.js =====
+// ════════════════════════════════════════════════════════════
+//  WEDDING CONFIGURATION — Rupa & Naresh
+//  Edit this file to customize all wedding details.
+// ════════════════════════════════════════════════════════════
+
+const weddingConfig = {
+  couple: {
+    bride: 'Rupa',
+    groom: 'Naresh',
+  },
+   contacts: {
+    brideWhatsApp: '919705138805',
+    groomWhatsApp: '917989322287',
+  },
+
+
+  wedding: {
+    date: 'March 9, 2027',
+    dateISO: '2027-03-09T05:55:00+05:30',
+    dateDisplay: '09 March 2027',
+    time: '5:55 AM',
+    venue: 'Raja Gopala Swamy Temple',
+    address: 'Narsapur – 534275',
+    hashtag: '#RupaWedsNaresh',
+  },
+
+  hero: {
+    label: 'A Beautiful Beginning',
+    title: 'Rupa & Naresh',
+    subtitle: 'Two families, one beautiful connection, and a lifetime of love.',
+    invitation:
+      "With the blessings of our families, we invite you to celebrate the beginning of our forever.",
+  },
+
+  loveStory: {
+    heading: 'Our Story, Written by Destiny',
+    subtitle:
+      'Sometimes, love begins with a beautiful connection between two families.',
+    intro:
+      'Our journey began with a bond that already connected our families. With the blessings of our loved ones, we are stepping into a new chapter together.',
+    milestones: [
+      {
+        title: 'A Beautiful Family Connection',
+        description:
+          'Our families share a special bond as neighbours and long-distance relatives.',
+        date: '',
+      },
+      {
+        title: 'The Beginning of Our Journey',
+        description:
+          '[Add details about how Rupa and Naresh were introduced.]',
+        date: '',
+      },
+      {
+        title: 'Growing Together',
+        description: '[Add meaningful moments from your journey.]',
+        date: '',
+      },
+      {
+        title: 'A New Chapter',
+        description:
+          '[Add engagement or wedding preparation details.]',
+        date: '',
+      },
+      {
+        title: 'Our Forever Begins',
+        description:
+          'March 9, 2027 — The beginning of our married life.',
+        date: 'March 9, 2027',
+      },
+    ],
+  },
+
+  events: [
+    {
+      id: 'haldi',
+      name: 'Haldi',
+      date: '7 March 2027',
+      time: '4:00 PM',
+      venue: 'At Home',
+      address: '',
+      description: 'Wear yellow colour sarees and dresses.',
+      color: '#F7D794',
+      accent: '#E8A838',
+      icon: 'sun',
+    },
+    {
+      id: 'mehendi',
+      name: 'Mehendi',
+      date: '8 March 2027',
+      time: '9:00 AM',
+      venue: 'At Home',
+      address: '',
+      description: 'Wear Green colour sarees and dresses',
+      color: '#C8E6C9',
+      accent: '#66A266',
+      icon: 'leaf',
+    },
+    {
+      id: 'sangeet',
+      name: 'Sangeet',
+      date: '8 March 2027',
+      time: '4:00 PM',
+      venue: 'At Home',
+      address: '',
+      description: 'Party wear dress code.',
+      color: '#DCD5F2',
+      accent: '#8B7AB8',
+      icon: 'music',
+    },
+    {
+      id: 'wedding',
+      name: 'Wedding',
+      date: '9 March 2027',
+      time: '5:55 AM',
+      venue: 'Raja Gopala Swamy Temple',
+      address: 'Narsapur – 534275',
+      description: 'Wear Traditional party wear',
+      color: '#F4D5DC',
+      accent: '#874F64',
+      icon: 'rings',
+    },
+    {
+      id: 'reception',
+      name: 'Reception',
+      date: '10 March 2027',
+      time: '10:00 AM',
+      venue: 'Function Hall (To Be Decided)',
+      address: '',
+      description: 'Party wear dress code.',
+      color: '#F7D6C5',
+      accent: '#D4AF6A',
+      icon: 'sparkle',
+    },
+  ],
+
+  gallery: {
+    heading: 'Moments of Us',
+    subheading: 'Every picture tells a little part of our story.',
+    categories: [
+      'Couple Moments',
+      'Family Memories',
+      'Pre-wedding',
+      'Wedding Day',
+      'Celebrations',
+    ],
+   images: [
+  { category: 'Couple Moments', alt: 'A beautiful moment together', src: 'Images/couple1.jpg' },
+  { category: 'Couple Moments', alt: 'Sharing a smile', src: 'Images/couple2.jpg' },
+
+  { category: 'Family Memories', alt: 'Family blessing', src: 'Images/family1.jpg' },
+  { category: 'Family Memories', alt: 'Family gathering', src: 'Images/family2.jpg' },
+
+  { category: 'Pre-wedding', alt: 'Pre-wedding celebration', src: 'Images/prewedding1.jpg' },
+  { category: 'Pre-wedding', alt: 'Joyful moments', src: 'Images/prewedding2.jpg' },
+
+  { category: 'Wedding Day', alt: 'Wedding ceremony', src: 'Images/wedding1.jpg' },
+  { category: 'Wedding Day', alt: 'Sacred rituals', src: 'Images/wedding2.jpg' },
+
+  { category: 'Celebrations', alt: 'Festive celebration', src: 'Images/celebration1.jpg' },
+  { category: 'Celebrations', alt: 'Dancing and joy', src: 'Images/celebration2.jpg' },
+],
+  },
+
+  venue: {
+    heading: 'Where Our Forever Begins',
+    name: 'Raja Gopala Swamy Temple',
+    address: 'Narsapur – 534275',
+    date: '09 March 2027',
+    muhurtham: '5:55 AM',
+    mapUrl:
+      'https://www.google.com/maps?q=Raja+Gopala+Swamy+Temple+Narsapur&output=embed',
+    directionsUrl:
+      'https://www.google.com/maps/dir/?api=1&query=Raja+Gopala+Swamy+Temple+Narsapur+534275',
+  },
+
+  family: {
+    heading: 'With the Blessings of Our Families',
+    brideSide: {
+      title: "Bride's Family",
+      members: [
+        { name: 'Devarapu Srinivasu', relation: 'Father', message: 'Wishing you both a lifetime filled with love, laughter, understanding, and countless beautiful memories together.' },
+        { name: 'Devarapu Surya Kumari', relation: 'Mother', message: 'May this beautiful new chapter bring you both joy, peace, and a lifetime of cherished moments. Wishing you a wonderful life together!' },
+        { name: 'Devarapu Mounika Bala Katyaini', relation: 'Sibling', message: 'May your journey together be blessed with endless happiness, togetherness, and a love that grows stronger with every passing day.' },
+      ],
+    },
+    groomSide: {
+      title: "Groom's Family",
+      members: [
+        { name: 'Raai Satya Narayana', relation: 'Father', message: 'Two hearts, one beautiful journey. May your married life be filled with love, laughter, blessings, and happiness always' },
+        { name: 'Raai veera venkata Durga', relation: 'Mother', message: 'With all my love and blessings, I wish you both a beautiful life together filled with happiness, harmony, and unforgettable memories.' },
+        ],
+    },
+  },
+
+  dressCode: [
+    { event: 'Haldi', suggestion: 'Bright traditional outfits in yellow tones.' },
+    { event: 'Mehendi', suggestion: 'Green and colorful ethnic wear.' },
+    { event: 'Sangeet', suggestion: 'Glamorous Indo-western attire.' },
+    { event: 'Wedding', suggestion: 'Traditional Indian wedding attire.' },
+    { event: 'Reception', suggestion: 'Elegant formal or festive attire.' },
+  ],
+
+  travel: [
+    { title: 'How to Reach', content: `Use the location given to get directions to the wedding venue. 
+You can open it in Google Maps and follow the directions to reach us easily.
+` },
+    { title: 'Accommodation', content: ` Your stay is taken care of! ❤️
+We will be providing accommodation at our home for our family and friends.
+Please let us know in advance if you need accommodation, so we can make
+comfortable arrangements for you. ` },
+    { title: 'Contact for Assistance', content: 'Contact:970513xxxx' },
+  ],
+
+  countdown: {
+    heading: 'Counting Down to Forever',
+    target: '2027-03-09T05:55:00+05:30',
+  },
+
+  scratchCard: {
+    heading: 'A Little Surprise for You',
+    instruction: 'Scratch to reveal our special day!',
+    revealedDate: '09 March 2027',
+    revealedTime: '5:55 AM',
+  },
+
+  guestbook: {
+    heading: 'Leave a Little Love',
+  },
+
+  thankYou: {
+    heading: 'Thank You for Being Part of Our Story',
+    message:
+      'Your love, blessings, and presence mean the world to us. We look forward to celebrating this beautiful beginning with you.',
+  },
+
+  nav: [
+    { label: 'Home', href: '#hero' },
+    { label: 'Our Story', href: '#story' },
+    { label: 'Events', href: '#events' },
+    { label: 'Gallery', href: '#gallery' },
+    { label: 'Venue', href: '#venue' },
+    { label: 'RSVP', href: '#rsvp' },
+    { label: 'FAQs', href: '#faqs' },
+  ],
+};
+
+
+// ===== src/icons.js =====
+// ════════════════════════════════════════════════════════════
+//  ICON HELPER — inline SVG icons (no external dependency)
+// ════════════════════════════════════════════════════════════
+
+const icons = {
+  calendar: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`,
+  clock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+  mapPin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+  heart: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>`,
+  rings: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="14" r="6"/><circle cx="15" cy="14" r="6"/><path d="M7 2 L9 6 M17 2 L15 6"/></svg>`,
+  music: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`,
+  sun: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`,
+  leaf: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19.2 2.96c1.4 9.3-5.32 14.05-8.2 17.04"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>`,
+  sparkle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3z"/></svg>`,
+  plus: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>`,
+  chevronLeft: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`,
+  chevronRight: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>`,
+  chevronUp: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>`,
+  x: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`,
+  copy: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`,
+  user: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`,
+  car: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h11l4 5v5h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>`,
+  plane: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5a2.12 2.12 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.4.8l3 4-2 2-2-1-1.5 1.5L5 15l1.5 1.5L5.5 18l2-2 4 3 .8-.2-3-4 2-2 8 4.5a.5.5 0 0 0 .7-.6z"/></svg>`,
+  train: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/><path d="M12 3v8"/><circle cx="8.5" cy="15" r="1"/><circle cx="15.5" cy="15" r="1"/><path d="M8 19l-2 3"/><path d="M16 19l2 3"/></svg>`,
+  bed: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>`,
+  phone: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+  helpCircle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
+  image: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>`,
+  arrowRight: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`,
+  gift: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>`,
+  navigation: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>`,
+};
+
+function icon(name) {
+  return icons[name] || '';
+}
+
+
+// ===== src/illustrations.js =====
+// ════════════════════════════════════════════════════════════
+//  COUPLE ILLUSTRATIONS — SVG cartoon-style Indian bride & groom
+//  Each function returns an SVG string for a different event.
+//  Colors change per event; character identity stays consistent.
+// ════════════════════════════════════════════════════════════
+
+function decorFlowers(color1, color2) {
+  let petals = '';
+  const positions = [
+    [40, 50], [80, 30], [120, 60], [160, 25], [200, 55],
+    [30, 200], [70, 220], [110, 210], [150, 225], [190, 200],
+    [15, 110], [210, 100],
+  ];
+  for (const [x, y] of positions) {
+    petals += `<g transform="translate(${x},${y})">
+      <circle cx="0" cy="-5" r="4" fill="${color1}" opacity="0.6"/>
+      <circle cx="5" cy="0" r="4" fill="${color2}" opacity="0.6"/>
+      <circle cx="0" cy="5" r="4" fill="${color1}" opacity="0.6"/>
+      <circle cx="-5" cy="0" r="4" fill="${color2}" opacity="0.6"/>
+      <circle cx="0" cy="0" r="3" fill="#D4AF6A" opacity="0.7"/>
+    </g>`;
+  }
+  return petals;
+}
+
+function sparkles(count = 8, area = '0,0,240,240') {
+  let s = '';
+  const [minX, minY, maxX, maxY] = area.split(',').map(Number);
+  for (let i = 0; i < count; i++) {
+    const x = minX + Math.random() * (maxX - minX);
+    const y = minY + Math.random() * (maxY - minY);
+    s += `<g transform="translate(${x},${y})" opacity="0.5">
+      <path d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#D4AF6A"/>
+    </g>`;
+  }
+  return s;
+}
+
+function archDome(color) {
+  return `<path d="M30,240 Q30,70 120,50 Q210,70 210,240" fill="none" stroke="${color}" stroke-width="2" opacity="0.25"/>
+          <path d="M50,240 Q50,90 120,70 Q190,90 190,240" fill="none" stroke="${color}" stroke-width="1.5" opacity="0.15"/>`;
+}
+
+function baseBride(outfitColor, jewelryColor, accentColor) {
+  // Bride: face, hair, outfit, jewelry — consistent identity
+  return `
+    <!-- Bride -->
+    <g transform="translate(85,80)">
+      <!-- Hair flowing -->
+      <path d="M-18,-8 Q-28,30 -22,60 Q-15,75 -8,70 L-8,-5 Z" fill="#3D2817" opacity="0.85"/>
+      <path d="M18,-8 Q28,30 22,60 Q15,75 8,70 L8,-5 Z" fill="#3D2817" opacity="0.85"/>
+      <!-- Head/hair top -->
+      <ellipse cx="0" cy="-12" rx="22" ry="20" fill="#3D2817"/>
+      <!-- Face -->
+      <ellipse cx="0" cy="5" rx="16" ry="19" fill="#F5C6A0"/>
+      <!-- Sindoor / bindi -->
+      <circle cx="0" cy="-2" r="2" fill="#C0392B" opacity="0.7"/>
+      <!-- Eyes (closed, gentle) -->
+      <path d="M-9,3 Q-6,1 -3,3" fill="none" stroke="#3D2817" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M3,3 Q6,1 9,3" fill="none" stroke="#3D2817" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Smile -->
+      <path d="M-4,11 Q0,14 4,11" fill="none" stroke="#8B4F3A" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Earrings -->
+      <circle cx="-16" cy="8" r="3" fill="${jewelryColor}"/>
+      <circle cx="16" cy="8" r="3" fill="${jewelryColor}"/>
+      <!-- Necklace -->
+      <path d="M-10,22 Q0,30 10,22" fill="none" stroke="${jewelryColor}" stroke-width="2"/>
+      <circle cx="0" cy="29" r="3" fill="${jewelryColor}"/>
+      <!-- Maang tikka -->
+      <line x1="0" y1="-22" x2="0" y2="-8" stroke="${jewelryColor}" stroke-width="1"/>
+      <circle cx="0" cy="-7" r="2.5" fill="${jewelryColor}"/>
+      <!-- Outfit / lehenga -->
+      <path d="M-20,28 Q-30,80 -35,140 L35,140 Q30,80 20,28 Z" fill="${outfitColor}"/>
+      <!-- Outfit border -->
+      <path d="M-32,135 L32,135" stroke="${jewelryColor}" stroke-width="2" opacity="0.6"/>
+      <!-- Dupatta -->
+      <path d="M-22,30 Q-40,50 -35,100 Q-30,110 -28,105" fill="${accentColor}" opacity="0.5"/>
+      <path d="M22,30 Q40,50 35,100 Q30,110 28,105" fill="${accentColor}" opacity="0.5"/>
+      <!-- Hands -->
+      <circle cx="-28" cy="105" r="6" fill="#F5C6A0"/>
+      <circle cx="28" cy="105" r="6" fill="#F5C6A0"/>
+      <!-- Bangles -->
+      <path d="M-31,103 Q-28,101 -25,103" fill="none" stroke="${jewelryColor}" stroke-width="1.5"/>
+      <path d="M-31,107 Q-28,105 -25,107" fill="none" stroke="${jewelryColor}" stroke-width="1.5"/>
+      <path d="M25,103 Q28,101 31,103" fill="none" stroke="${jewelryColor}" stroke-width="1.5"/>
+      <path d="M25,107 Q28,105 31,107" fill="none" stroke="${jewelryColor}" stroke-width="1.5"/>
+    </g>
+  `;
+}
+
+function baseGroom(outfitColor, accentColor, hasTurban = false) {
+  // Groom: face, hair, sherwani — consistent identity
+  const turban = hasTurban
+    ? `<path d="M-24,-18 Q-24,-32 0,-34 Q24,-32 24,-18 Q20,-14 0,-14 Q-20,-14 -24,-18 Z" fill="${accentColor}"/>
+       <path d="M-20,-22 Q0,-28 20,-22" fill="none" stroke="#D4AF6A" stroke-width="1.5" opacity="0.6"/>
+       <circle cx="0" cy="-30" r="3" fill="#D4AF6A"/>`
+    : `<ellipse cx="0" cy="-12" rx="20" ry="18" fill="#2D1810"/>
+       <path d="M-18,-6 Q-12,-14 -5,-8" fill="none" stroke="#2D1810" stroke-width="2"/>`;
+
+  return `
+    <!-- Groom -->
+    <g transform="translate(155,80)">
+      ${turban}
+      <!-- Face -->
+      <ellipse cx="0" cy="5" rx="15" ry="18" fill="#E8B890"/>
+      <!-- Eyes (closed, gentle) -->
+      <path d="M-8,3 Q-5,1 -2,3" fill="none" stroke="#2D1810" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M2,3 Q5,1 8,3" fill="none" stroke="#2D1810" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Smile -->
+      <path d="M-3,11 Q0,13 3,11" fill="none" stroke="#8B4F3A" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Earrings (small stud) -->
+      <circle cx="-15" cy="8" r="2" fill="#D4AF6A"/>
+      <circle cx="15" cy="8" r="2" fill="#D4AF6A"/>
+      <!-- Neck -->
+      <rect x="-5" y="20" width="10" height="8" fill="#E8B890"/>
+      <!-- Sherwani -->
+      <path d="M-18,28 Q-28,80 -30,140 L30,140 Q28,80 18,28 Z" fill="${outfitColor}"/>
+      <!-- Sherwani buttons -->
+      <line x1="0" y1="30" x2="0" y2="135" stroke="${accentColor}" stroke-width="1.5" opacity="0.5"/>
+      <circle cx="0" cy="45" r="2" fill="${accentColor}"/>
+      <circle cx="0" cy="60" r="2" fill="${accentColor}"/>
+      <circle cx="0" cy="75" r="2" fill="${accentColor}"/>
+      <circle cx="0" cy="90" r="2" fill="${accentColor}"/>
+      <circle cx="0" cy="105" r="2" fill="${accentColor}"/>
+      <circle cx="0" cy="120" r="2" fill="${accentColor}"/>
+      <!-- Collar -->
+      <path d="M-10,28 L0,38 L10,28" fill="none" stroke="${accentColor}" stroke-width="2" opacity="0.5"/>
+      <!-- Shawl / dupatta over shoulder -->
+      <path d="M-18,28 Q-35,55 -28,95 Q-25,90 -22,85" fill="${accentColor}" opacity="0.4"/>
+      <!-- Hands -->
+      <circle cx="-25" cy="100" r="6" fill="#E8B890"/>
+      <circle cx="25" cy="100" r="6" fill="#E8B890"/>
+    </g>
+  `;
+}
+
+function heartsFloating() {
+  let h = '';
+  const positions = [[30, 40], [200, 50], [20, 180], [210, 170], [115, 25], [50, 220], [190, 220]];
+  for (const [x, y] of positions) {
+    h += `<g transform="translate(${x},${y})" class="float-heart" opacity="0.4">
+      <path d="M0,4 C-3,0 -7,0 -7,4 C-7,7 0,12 0,12 C0,12 7,7 7,4 C7,0 3,0 0,4 Z" fill="#F4A0B0"/>
+    </g>`;
+  }
+  return h;
+}
+
+function ringIcon(cx, cy, color) {
+  return `<g transform="translate(${cx},${cy})">
+    <circle cx="-3" cy="0" r="6" fill="none" stroke="${color}" stroke-width="2"/>
+    <circle cx="3" cy="0" r="6" fill="none" stroke="${color}" stroke-width="2"/>
+    <path d="M-4,-6 L-2,-2 M4,-6 L2,-2" stroke="${color}" stroke-width="1.5" fill="none"/>
+  </g>`;
+}
+
+function wrapSVG(content, bgGrad1, bgGrad2, decorations) {
+  return `<svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg" class="couple-illustration" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <linearGradient id="bg-${bgGrad1.replace('#','')}" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="${bgGrad1}"/>
+        <stop offset="100%" stop-color="${bgGrad2}"/>
+      </linearGradient>
+    </defs>
+    <rect width="240" height="280" rx="16" fill="url(#bg-${bgGrad1.replace('#','')})"/>
+    ${decorations}
+    ${content}
+  </svg>`;
+}
+
+// ════════════════════════════════════════════════════════════
+//  HERO ILLUSTRATION
+// ════════════════════════════════════════════════════════════
+
+function heroIllustration() {
+  return `
+    <div class="hero-photo">
+      <img src="images/couple2.jpg" alt="Wedding couple">
+    </div>
+  `;
+}
+
+// ════════════════════════════════════════════════════════════
+//  HALDI
+// ════════════════════════════════════════════════════════════
+
+function haldiIllustration() {
+  return `
+    <div class="event-photo">
+      <img src="Images/haldi.avif" alt="Haldi ceremony">
+    </div>
+  `;
+}
+
+// ════════════════════════════════════════════════════════════
+//  MEHENDI
+// ════════════════════════════════════════════════════════════
+function mehendiIllustration() {
+  return `
+    <div class="event-photo">
+      <img src="Images/mehendi.jpg" alt="Mehendi ceremony">
+    </div>
+  `;
+}
+// ════════════════════════════════════════════════════════════
+//  SANGEET
+// ════════════════════════════════════════════════════════════
+function sangeetIllustration() {
+  return `
+    <div class="event-photo">
+      <img src="Images/sangeet.jpg" alt="Sangeet ceremony">
+    </div>
+  `;
+}
+// ════════════════════════════════════════════════════════════
+//  WEDDING
+// ════════════════════════════════════════════════════════════
+
+function weddingIllustration() {
+  return `
+    <div class="event-photo">
+      <img src="Images/wedding.jpg" alt="Wedding ceremony">
+    </div>
+  `;
+}
+
+// ════════════════════════════════════════════════════════════
+//  RECEPTION
+// ════════════════════════════════════════════════════════════
+
+function receptionIllustration() {
+  return `
+    <div class="event-photo">
+      <img src="Images/reception.png" alt="Reception ceremony">
+    </div>
+  `;
+}
+
+// ════════════════════════════════════════════════════════════
+//  THANK YOU ILLUSTRATION
+// ════════════════════════════════════════════════════════════
+
+function thankYouIllustration() {
+  const decor = `
+    ${archDome('#D4AF6A')}
+    ${decorFlowers('#F4D5DC', '#FFFDFB')}
+    ${heartsFloating()}
+    ${sparkles(12)}
+    ${ringIcon(120, 250, '#D4AF6A')}
+  `;
+  const couple = `
+    ${baseBride('#F4D5DC', '#D4AF6A', '#F7D6C5')}
+    ${baseGroom('#FFFDFB', '#D4AF6A')}
+  `;
+  return wrapSVG(couple, '#FFFDFB', '#F4D5DC', decor);
+}
+
+// Map event IDs to illustration functions
+const eventIllustrations = {
+  haldi: haldiIllustration,
+  mehendi: mehendiIllustration,
+  sangeet: sangeetIllustration,
+  wedding: weddingIllustration,
+  reception: receptionIllustration,
+};
+
+
+// ===== src/components/Navbar.js =====
+// ════════════════════════════════════════════════════════════
+//  NAVBAR COMPONENT
+// ════════════════════════════════════════════════════════════
+function renderNavbar() {
+  const navItems = weddingConfig.nav
+    .map(
+      (item) =>
+        `<li><a href="${item.href}" data-nav-link>${item.label}</a></li>`
+    )
+    .join('');
+
+  return `
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo">R <span class="heart">&#9825;</span> N</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        ${navItems}
+      </ul>
+    </nav>
+  `;
+}
+
+function setupNavbar() {
+  const navbar = document.getElementById('navbar');
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  const links = navLinks.querySelectorAll('[data-nav-link]');
+
+  let scrolled = false;
+  function onScroll() {
+    const isScrolled = window.scrollY > 50;
+    if (isScrolled !== scrolled) {
+      scrolled = isScrolled;
+      navbar.classList.toggle('scrolled', scrolled);
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('active', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+
+// ===== src/components/HeroSection.js =====
+// ════════════════════════════════════════════════════════════
+//  HERO SECTION
+// ════════════════════════════════════════════════════════════
+function renderHero() {
+  const { hero, wedding } = weddingConfig;
+
+  return `
+    <section class="hero" id="hero" aria-label="Hero section">
+      <div class="hero-decorations" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-text reveal">
+          <p class="hero-label">${hero.label}</p>
+          <h1 class="hero-title">${weddingConfig.couple.bride} <span class="amp">&amp;</span> ${weddingConfig.couple.groom}</h1>
+          <p class="hero-subtitle">${hero.subtitle}</p>
+          <p class="hero-invitation">${hero.invitation}</p>
+          <div class="hero-details">
+            <div class="hero-detail">
+              <span class="label">Date</span>
+              <span class="value">${wedding.dateDisplay}</span>
+            </div>
+            <div class="hero-detail">
+              <span class="label">Time</span>
+              <span class="value">${wedding.time}</span>
+            </div>
+            <div class="hero-detail">
+              <span class="label">Venue</span>
+              <span class="value">${wedding.venue}</span>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="#story" class="btn btn-primary">Explore Our Story</a>
+            <a href="#events" class="btn btn-outline">Wedding Events</a>
+            <a href="#rsvp" class="btn btn-gold">RSVP</a>
+          </div>
+        </div>
+        <div class="hero-illustration-wrapper reveal" aria-label="Illustration of Rupa and Naresh in traditional Indian wedding attire">
+          ${heroIllustration()}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+
+// ===== src/components/LoveStoryTimeline.js =====
+// ════════════════════════════════════════════════════════════
+//  LOVE STORY TIMELINE
+// ════════════════════════════════════════════════════════════
+function renderLoveStory() {
+  const { loveStory } = weddingConfig;
+
+  const milestones = loveStory.milestones
+    .map((m, i) => {
+      const dateHTML = m.date
+        ? `<div class="timeline-date">${m.date}</div>`
+        : '';
+      return `
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            ${dateHTML}
+            <h3>${m.title}</h3>
+            <p>${m.description}</p>
+          </div>
+          <div class="timeline-marker" aria-hidden="true">
+            ${icon('heart')}
+          </div>
+        </div>
+      `;
+    })
+    .join('');
+
+  return `
+    <section class="section story-section" id="story" aria-label="Our love story">
+      <div class="section-inner">
+        <p class="section-label reveal">Our Journey</p>
+        <h2 class="section-title reveal">${loveStory.heading}</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <p class="story-intro reveal">${loveStory.intro}</p>
+        <div class="timeline">
+          ${milestones}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+
+// ===== src/components/WeddingEvents.js =====
+// ════════════════════════════════════════════════════════════
+//  WEDDING EVENTS
+// ════════════════════════════════════════════════════════════
+function renderWeddingEvents() {
+  const events = weddingConfig.events
+    .map((event) => {
+      const illusFn = eventIllustrations[event.id];
+      const illustration = illusFn ? illusFn() : '';
+      const addressHTML = event.address
+        ? `<div class="event-detail-row">${icon('mapPin')}<span>${event.address}</span></div>`
+        : '';
+
+      // Generate Google Calendar link
+      const dateMap = {
+        haldi: '20270307T160000',
+        mehendi: '20270308T090000',
+        sangeet: '20270308T160000',
+        wedding: '20270309T055500',
+        reception: '20270310T100000',
+      };
+      const startCal = dateMap[event.id] || '20270309T055500';
+      const calLink = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
+        'Rupa & Naresh — ' + event.name
+      )}&dates=${startCal}/${startCal}&details=${encodeURIComponent(
+        event.description
+      )}&location=${encodeURIComponent(event.venue + (event.address ? ', ' + event.address : ''))}&ctz=Asia/Kolkata`;
+
+      return `
+        <article class="event-card reveal" style="border-top: 3px solid ${event.accent};">
+          <div class="event-illustration" style="background: linear-gradient(135deg, ${event.color}, var(--warm-white));">
+            ${illustration}
+          </div>
+          <div class="event-body">
+            <h3 class="event-name">${event.name}</h3>
+            <div class="event-detail-row">${icon('calendar')}<span>${event.date}</span></div>
+            <div class="event-detail-row">${icon('clock')}<span>${event.time}</span></div>
+            <div class="event-detail-row">${icon('mapPin')}<span>${event.venue}</span></div>
+            ${addressHTML}
+            <p class="event-description">${event.description}</p>
+            <a href="${calLink}" target="_blank" rel="noopener" class="event-add-calendar">
+              ${icon('calendar')} Add to Calendar
+            </a>
+          </div>
+        </article>
+      `;
+    })
+    .join('');
+
+  return `
+    <section class="section events-section" id="events" aria-label="Wedding events">
+      <div class="section-inner">
+        <p class="section-label reveal">Celebrate With Us</p>
+        <h2 class="section-title reveal">Our Wedding Events</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <p class="section-subtitle reveal">Five beautiful celebrations leading to our forever.</p>
+        <div class="events-grid">
+          ${events}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+
+// ===== src/components/CountdownTimer.js =====
+// ════════════════════════════════════════════════════════════
+//  COUNTDOWN TIMER
+// ════════════════════════════════════════════════════════════
+function renderCountdown() {
+  const { countdown } = weddingConfig;
+
+  return `
+    <section class="section countdown-section" id="countdown" aria-label="Countdown to wedding">
+      <div class="section-inner">
+        <p class="section-label reveal">The Wait Begins</p>
+        <h2 class="section-title reveal">${countdown.heading}</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <div class="countdown-card reveal">
+          <div class="countdown-timer" id="countdownTimer">
+            <div class="countdown-unit">
+              <div class="countdown-number" id="cd-days">00</div>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-unit">
+              <div class="countdown-number" id="cd-hours">00</div>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-unit">
+              <div class="countdown-number" id="cd-mins">00</div>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-unit">
+              <div class="countdown-number" id="cd-secs">00</div>
+              <span class="countdown-label">Seconds</span>
+            </div>
+          </div>
+          <div class="countdown-celebrate" id="cd-celebrate" style="display:none;">
+            The wait is over! Wishing Rupa &amp; Naresh a beautiful forever!
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function setupCountdown() {
+  const target = new Date(weddingConfig.countdown.target).getTime();
+  const daysEl = document.getElementById('cd-days');
+  const hoursEl = document.getElementById('cd-hours');
+  const minsEl = document.getElementById('cd-mins');
+  const secsEl = document.getElementById('cd-secs');
+  const celebrateEl = document.getElementById('cd-celebrate');
+  const timerEl = document.getElementById('countdownTimer');
+
+  function pad(n) {
+    return String(Math.max(0, n)).padStart(2, '0');
+  }
+
+  function update() {
+    const now = Date.now();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      daysEl.textContent = '00';
+      hoursEl.textContent = '00';
+      minsEl.textContent = '00';
+      secsEl.textContent = '00';
+      timerEl.style.display = 'none';
+      celebrateEl.style.display = 'block';
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    daysEl.textContent = pad(days);
+    hoursEl.textContent = pad(hours);
+    minsEl.textContent = pad(mins);
+    secsEl.textContent = pad(secs);
+  }
+
+  update();
+  const interval = setInterval(update, 1000);
+
+  // Stop updating after the countdown is over
+  const checkInterval = setInterval(() => {
+    if (Date.now() >= target) {
+      clearInterval(interval);
+      clearInterval(checkInterval);
+    }
+  }, 5000);
+}
+
+
+// ===== src/components/ScratchCard.js =====
+// ════════════════════════════════════════════════════════════
+//  SCRATCH CARD — Canvas-based interactive reveal
+// ════════════════════════════════════════════════════════════
+function renderScratchCard() {
+  const { scratchCard } = weddingConfig;
+
+  return `
+    <section class="section scratch-section" id="scratch" aria-label="Scratch card surprise">
+      <div class="section-inner">
+        <p class="section-label reveal">A Little Fun</p>
+        <h2 class="section-title reveal">${scratchCard.heading}</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <p class="section-subtitle reveal">${scratchCard.instruction}</p>
+        <div class="scratch-card-container reveal" id="scratchContainer">
+          <div class="scratch-hidden">
+            <svg class="corner-deco tl" viewBox="0 0 40 40" aria-hidden="true"><path d="M0,0 Q0,20 20,20 Q10,10 0,0" fill="#D4AF6A" opacity="0.3"/><circle cx="8" cy="8" r="3" fill="#D4AF6A" opacity="0.4"/></svg>
+            <svg class="corner-deco tr" viewBox="0 0 40 40" aria-hidden="true"><path d="M0,0 Q0,20 20,20 Q10,10 0,0" fill="#D4AF6A" opacity="0.3"/><circle cx="8" cy="8" r="3" fill="#D4AF6A" opacity="0.4"/></svg>
+            <svg class="corner-deco bl" viewBox="0 0 40 40" aria-hidden="true"><path d="M0,0 Q0,20 20,20 Q10,10 0,0" fill="#D4AF6A" opacity="0.3"/><circle cx="8" cy="8" r="3" fill="#D4AF6A" opacity="0.4"/></svg>
+            <svg class="corner-deco br" viewBox="0 0 40 40" aria-hidden="true"><path d="M0,0 Q0,20 20,20 Q10,10 0,0" fill="#D4AF6A" opacity="0.3"/><circle cx="8" cy="8" r="3" fill="#D4AF6A" opacity="0.4"/></svg>
+            <p class="hidden-label">Our Special Day</p>
+            <p class="hidden-date">${scratchCard.revealedDate}</p>
+            <p class="hidden-time">At ${scratchCard.revealedTime}</p>
+          </div>
+          <canvas class="scratch-canvas" id="scratchCanvas" aria-label="Scratch surface — scratch to reveal the wedding date"></canvas>
+        </div>
+        <button class="scratch-reveal-btn" id="scratchRevealBtn">Reveal Date (no scratching needed)</button>
+      </div>
+    </section>
+  `;
+}
+
+function setupScratchCard() {
+  const canvas = document.getElementById('scratchCanvas');
+  const container = document.getElementById('scratchContainer');
+  const revealBtn = document.getElementById('scratchRevealBtn');
+
+  if (!canvas || !container) return;
+
+  const ctx = canvas.getContext('2d');
+  let isDrawing = false;
+  let revealed = false;
+
+  function setupCanvas() {
+    const rect = container.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    canvas.style.width = rect.width + 'px';
+    canvas.style.height = rect.height + 'px';
+    ctx.scale(dpr, dpr);
+
+    // Draw the scratch overlay
+    const grad = ctx.createLinearGradient(0, 0, rect.width, rect.height);
+    grad.addColorStop(0, '#E8C544');
+    grad.addColorStop(0.5, '#D4AF6A');
+    grad.addColorStop(1, '#C9A05A');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, rect.width, rect.height);
+
+    // Decorative pattern
+    ctx.fillStyle = 'rgba(255, 253, 251, 0.2)';
+    ctx.font = '16px DM Sans, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('Scratch to reveal!', rect.width / 2, rect.height / 2 - 10);
+    ctx.font = '24px Cormorant Garamond, serif';
+    ctx.fillStyle = 'rgba(255, 253, 251, 0.3)';
+    ctx.fillText('♥ ✦ ♥', rect.width / 2, rect.height / 2 + 20);
+
+    ctx.globalCompositeOperation = 'destination-out';
+  }
+
+  function getPos(e) {
+    const rect = canvas.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    return {
+      x: clientX - rect.left,
+      y: clientY - rect.top,
+    };
+  }
+
+  function scratch(pos) {
+    ctx.beginPath();
+    ctx.arc(pos.x, pos.y, 25, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  function checkReveal() {
+    if (revealed) return;
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    let transparent = 0;
+    const total = imageData.data.length / 4;
+    const step = Math.max(1, Math.floor(total / 1000));
+    for (let i = 0; i < total; i += step) {
+      if (imageData.data[i * 4 + 3] < 50) transparent++;
+    }
+    const ratio = transparent / (total / step);
+    if (ratio > 0.5) {
+      reveal();
+    }
+  }
+
+  function reveal() {
+    if (revealed) return;
+    revealed = true;
+    canvas.style.transition = 'opacity 0.6s ease';
+    canvas.style.opacity = '0';
+    setTimeout(() => {
+      canvas.style.pointerEvents = 'none';
+      canvas.style.display = 'none';
+    }, 600);
+  }
+
+  // Mouse events
+  canvas.addEventListener('mousedown', (e) => {
+    isDrawing = true;
+    scratch(getPos(e));
+  });
+  canvas.addEventListener('mousemove', (e) => {
+    if (!isDrawing) return;
+    scratch(getPos(e));
+  });
+  canvas.addEventListener('mouseup', () => {
+    if (isDrawing) {
+      isDrawing = false;
+      checkReveal();
+    }
+  });
+  canvas.addEventListener('mouseleave', () => {
+    if (isDrawing) {
+      isDrawing = false;
+      checkReveal();
+    }
+  });
+
+  // Touch events
+  canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    isDrawing = true;
+    scratch(getPos(e));
+  }, { passive: false });
+  canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    if (!isDrawing) return;
+    scratch(getPos(e));
+  }, { passive: false });
+  canvas.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    if (isDrawing) {
+      isDrawing = false;
+      checkReveal();
+    }
+  });
+
+  // Reveal button (accessible alternative)
+  revealBtn.addEventListener('click', reveal);
+
+  // Setup
+  setupCanvas();
+
+  // Handle resize
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    if (revealed) return;
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(setupCanvas, 200);
+  });
+}
+
+
+// ===== src/components/Gallery.js =====
+// ════════════════════════════════════════════════════════════
+//  GALLERY WITH LIGHTBOX
+// ════════════════════════════════════════════════════════════
+function renderGallery() {
+  const { gallery } = weddingConfig;
+
+  const allCategories = ['All', ...gallery.categories];
+
+  const filters = allCategories
+    .map(
+      (cat, i) =>
+        `<button class="gallery-filter ${i === 0 ? 'active' : ''}" data-category="${cat}">${cat}</button>`
+    )
+    .join('');
+
+  const items = gallery.images
+    .map((img, i) => {
+      const inner = img.src
+        ? `<img src="${img.src}" alt="${img.alt}" loading="lazy" />`
+        : `<div class="gallery-placeholder"><span class="ph-icon">${icon('image')}</span><span class="ph-label">PLACEHOLDER</span></div>`;
+      return `
+        <div class="gallery-item" data-category="${img.category}" data-index="${i}" tabindex="0" role="button" aria-label="View: ${img.alt}">
+          ${inner}
+          <div class="gallery-cat">${img.category}</div>
+        </div>
+      `;
+    })
+    .join('');
+
+  return `
+    <section class="section gallery-section" id="gallery" aria-label="Photo gallery">
+      <div class="section-inner">
+        <p class="section-label reveal">Cherished Memories</p>
+        <h2 class="section-title reveal">${gallery.heading}</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <p class="section-subtitle reveal">${gallery.subheading}</p>
+        <div class="gallery-filters reveal" id="galleryFilters">
+          ${filters}
+        </div>
+        <div class="gallery-grid reveal" id="galleryGrid">
+          ${items}
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">${icon('x')}</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">${icon('chevronLeft')}</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next image">${icon('chevronRight')}</button>
+    </div>
+  `;
+}
+
+function setupGallery() {
+  const filters = document.getElementById('galleryFilters');
+  const grid = document.getElementById('galleryGrid');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxContent = document.getElementById('lightboxContent');
+  const closeBtn = document.getElementById('lightboxClose');
+  const prevBtn = document.getElementById('lightboxPrev');
+  const nextBtn = document.getElementById('lightboxNext');
+
+  const galleryImages = weddingConfig.gallery.images;
+  let currentCategory = 'All';
+  let currentIndex = 0;
+
+  function getFilteredImages() {
+    if (currentCategory === 'All') return galleryImages;
+    return galleryImages.filter((img) => img.category === currentCategory);
+  }
+
+  function renderLightbox() {
+    const filtered = getFilteredImages();
+    const img = filtered[currentIndex];
+    if (!img) return;
+    if (img.src) {
+      lightboxContent.innerHTML = `<img src="${img.src}" alt="${img.alt}" />`;
+    } else {
+      lightboxContent.innerHTML = `<div class="gallery-placeholder" style="min-height:300px;border-radius:16px;"><span class="ph-icon">${icon('image')}</span><span class="ph-label">${img.alt} — Placeholder</span></div>`;
+    }
+  }
+
+  function openLightbox(index) {
+    const filtered = getFilteredImages();
+    if (filtered.length === 0) return;
+    if (index >= filtered.length) index = 0;
+    if (index < 0) index = filtered.length - 1;
+    currentIndex = index;
+    renderLightbox();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function navigate(dir) {
+    const filtered = getFilteredImages();
+    if (filtered.length === 0) return;
+    currentIndex += dir;
+    if (currentIndex >= filtered.length) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = filtered.length - 1;
+    renderLightbox();
+  }
+
+  // Filter buttons — single event listener
+  filters.addEventListener('click', (e) => {
+    const btn = e.target.closest('.gallery-filter');
+    if (!btn) return;
+    filters.querySelectorAll('.gallery-filter').forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentCategory = btn.dataset.category;
+
+    grid.querySelectorAll('.gallery-item').forEach((item) => {
+      const matches =
+        currentCategory === 'All' || item.dataset.category === currentCategory;
+      item.style.display = matches ? '' : 'none';
+    });
+  });
+
+  // Gallery item click — open lightbox
+  grid.addEventListener('click', (e) => {
+    const item = e.target.closest('.gallery-item');
+    if (!item || item.style.display === 'none') return;
+    const globalIndex = parseInt(item.dataset.index, 10);
+    const filtered = getFilteredImages();
+    const localIndex = filtered.findIndex(
+      (img) => galleryImages.indexOf(img) === globalIndex
+    );
+    openLightbox(localIndex >= 0 ? localIndex : 0);
+  });
+
+  // Keyboard for gallery items
+  grid.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const item = e.target.closest('.gallery-item');
+    if (!item) return;
+    e.preventDefault();
+    item.click();
+  });
+
+  // Lightbox controls
+  closeBtn.addEventListener('click', closeLightbox);
+  prevBtn.addEventListener('click', () => navigate(-1));
+  nextBtn.addEventListener('click', () => navigate(1));
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') navigate(-1);
+    if (e.key === 'ArrowRight') navigate(1);
+  });
+}
+
+
+// ===== src/components/RSVPForm.js =====
+// ════════════════════════════════════════════════════════════
+//  RSVP FORM — Stores responses in browser localStorage
+// ════════════════════════════════════════════════════════════
+function renderRSVP() {
+  return `
+    <section class="section rsvp-section" id="rsvp" aria-label="RSVP form">
+      <div class="section-inner">
+        <p class="section-label reveal">Be Part of Our Day</p>
+        <h2 class="section-title reveal">Will You Join Our Celebration?</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <p class="section-subtitle reveal">Your presence and blessings will make our special day even more meaningful.</p>
+        <form class="rsvp-form reveal" id="rsvpForm" novalidate>
+          <div class="form-group">
+            <label for="rsvpName" class="form-label">Guest Name <span class="required">*</span></label>
+            <input type="text" id="rsvpName" name="guestName" class="form-input" required aria-required="true" />
+            <div class="form-error" id="errName">Please enter your name.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="rsvpPhone" class="form-label">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="rsvpPhone" name="phone" class="form-input" required aria-required="true" />
+            <div class="form-error" id="errPhone">Please enter a valid phone number.</div>
+          </div>
+
+          <div class="form-group">
+  <span class="form-label">
+    Which side are you from? <span class="required">*</span>
+  </span>
+
+  <div class="form-radio-group">
+    <label class="form-radio-item">
+      <input
+        type="radio"
+        name="familySide"
+        value="bride"
+        required
+      />
+      Bride's Side
+    </label>
+
+    <label class="form-radio-item">
+      <input
+        type="radio"
+        name="familySide"
+        value="groom"
+      />
+      Groom's Side
+    </label>
+  </div>
+
+  <div class="form-error" id="errFamilySide">
+    Please select Bride's Side or Groom's Side.
+  </div>
+</div>
+
+          <div class="form-group">
+            <span class="form-label">Attendance <span class="required">*</span></span>
+            <div class="form-radio-group">
+              <label class="form-radio-item">
+                <input type="radio" name="attendance" value="yes" required /> Yes, I'll be there
+              </label>
+              <label class="form-radio-item">
+                <input type="radio" name="attendance" value="no" /> Sorry, I can't attend
+              </label>
+              <label class="form-radio-item">
+                <input type="radio" name="attendance" value="maybe" /> Maybe
+              </label>
+            </div>
+            <div class="form-error" id="errAttendance">Please select your attendance.</div>
+          </div>
+
+          <div class="form-group">
+            <span class="form-label">Meal Preference</span>
+            <div class="form-radio-group">
+              <label class="form-radio-item">
+                <input type="radio" name="mealPreference" value="vegetarian" /> Vegetarian
+              </label>
+              <label class="form-radio-item">
+                <input type="radio" name="mealPreference" value="non-vegetarian" /> Non-Vegetarian
+              </label>
+              <label class="form-radio-item">
+                <input type="radio" name="mealPreference" value="jain" /> Jain
+              </label>
+              <label class="form-radio-item">
+                <input type="radio" name="mealPreference" value="other" /> Other
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="rsvpMessage" class="form-label">Message <span style="color:var(--neutral-400);font-size:0.8rem;">(Optional)</span></label>
+            <textarea id="rsvpMessage" name="message" class="form-textarea" placeholder="Share your wishes or any special notes..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit-btn" id="rsvpSubmit">
+            Send Your Response
+          </button>
+
+          <div class="form-message" id="rsvpMessageBox"></div>
+        </form>
+      </div>
+    </section>
+  `;
+}
+
+function setupRSVP() {
+  const form = document.getElementById('rsvpForm');
+  const submitBtn = document.getElementById('rsvpSubmit');
+  const messageBox = document.getElementById('rsvpMessageBox');
+
+  function showError(id, show) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.classList.toggle('show', show);
+    }
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Clear previous errors
+    showError('errName', false);
+    showError('errPhone', false);
+    showError('errFamilySide', false);
+    showError('errAttendance', false);
+
+    messageBox.className = 'form-message';
+    messageBox.textContent = '';
+
+    // Get form values
+    const name = form.guestName.value.trim();
+    const phone = form.phone.value.trim();
+
+    const familySideEl =
+      form.querySelector('input[name="familySide"]:checked');
+
+    const attendanceEl =
+      form.querySelector('input[name="attendance"]:checked');
+
+    const mealEl =
+      form.querySelector('input[name="mealPreference"]:checked');
+
+    const message = form.message.value.trim();
+
+    // Validation
+    let valid = true;
+
+    if (!name) {
+      showError('errName', true);
+      valid = false;
+    }
+
+    if (!phone || phone.replace(/\D/g, '').length < 7) {
+      showError('errPhone', true);
+      valid = false;
+    }
+
+    if (!familySideEl) {
+      showError('errFamilySide', true);
+      valid = false;
+    }
+
+    if (!attendanceEl) {
+      showError('errAttendance', true);
+      valid = false;
+    }
+
+    if (!valid) {
+      return;
+    }
+
+    // Get selected side
+    const familySide = familySideEl.value;
+
+    const familySideText =
+      familySide === 'bride'
+        ? "Bride's Side"
+        : "Groom's Side";
+
+    // Select WhatsApp number
+    const whatsappNumber =
+      familySide === 'bride'
+        ? weddingConfig.contacts.brideWhatsApp
+        : weddingConfig.contacts.groomWhatsApp;
+
+    // Create RSVP details
+    const attendanceText = {
+      yes: "Yes, I'll be there",
+      no: "Sorry, I can't attend",
+      maybe: "Maybe"
+    };
+
+    const mealText = mealEl
+      ? mealEl.value
+      : "Not specified";
+
+    // WhatsApp message
+    const whatsappMessage = `
+💍 *Wedding RSVP*
+
+👤 Guest Name: ${name}
+
+📱 Phone: ${phone}
+
+👨‍👩‍👧‍👦 Side: ${familySideText}
+
+📅 Attendance: ${attendanceText[attendanceEl.value]}
+
+🍽️ Meal Preference: ${mealText}
+
+💌 Message:
+${message || "No message"}
+
+Thank you!
+`.trim();
+
+    // Save locally as backup
+    const payload = {
+      guest_name: name,
+      phone: phone,
+      family_side: familySide,
+      attendance: attendanceEl.value,
+      meal_preference: mealEl ? mealEl.value : null,
+      message: message || null,
+      created_at: new Date().toISOString()
+    };
+
+    try {
+
+      const responses = JSON.parse(
+        localStorage.getItem('wedding_rsvp_responses') || '[]'
+      );
+
+      responses.unshift(payload);
+
+      localStorage.setItem(
+        'wedding_rsvp_responses',
+        JSON.stringify(responses)
+      );
+
+      // Create WhatsApp URL
+      const whatsappURL =
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+          whatsappMessage
+        )}`;
+
+      // Success message
+      messageBox.classList.add('success');
+
+      messageBox.textContent =
+        `Thank you, ${name}! Opening WhatsApp...`;
+
+      // Reset form
+      form.reset();
+
+      // Open WhatsApp
+      setTimeout(() => {
+        window.open(
+          whatsappURL,
+          '_blank',
+          'noopener,noreferrer'
+        );
+      }, 500);
+
+    } catch (err) {
+
+      console.error(err);
+
+      messageBox.classList.add('error');
+
+      messageBox.textContent =
+        'Something went wrong. Please try again.';
+    }
+  });
+}
+// ===== src/components/VenueSection.js =====
+// ════════════════════════════════════════════════════════════
+//  VENUE SECTION
+// ════════════════════════════════════════════════════════════
+function renderVenue() {
+  const { venue } = weddingConfig;
+
+  return `
+    <section class="section venue-section" id="venue" aria-label="Wedding venue">
+      <div class="section-inner">
+        <p class="section-label reveal">The Sacred Place</p>
+        <h2 class="section-title reveal">${venue.heading}</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <div class="venue-card reveal">
+          <div class="venue-info">
+            <h3>${venue.name}</h3>
+            <div class="venue-info-row">
+              ${icon('mapPin')}
+              <div>
+                <span class="v-label">Address</span>
+                <span class="v-value">${venue.address}</span>
+              </div>
+            </div>
+            <div class="venue-info-row">
+              ${icon('calendar')}
+              <div>
+                <span class="v-label">Date</span>
+                <span class="v-value">${venue.date}</span>
+              </div>
+            </div>
+            <div class="venue-info-row">
+              ${icon('clock')}
+              <div>
+                <span class="v-label">Muhurtham</span>
+                <span class="v-value">${venue.muhurtham}</span>
+              </div>
+            </div>
+            <a href="${venue.directionsUrl}" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:1.5rem;">
+              ${icon('navigation')} Get Directions
+            </a>
+          </div>
+          <div class="venue-map" id="venueMap">
+            <iframe
+              src="${venue.mapUrl}"
+              title="Map to ${venue.name}"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              onerror="this.style.display='none';document.getElementById('mapFallback').style.display='flex';"
+            ></iframe>
+            <div class="venue-map-fallback" id="mapFallback" style="display:none;">
+              ${icon('mapPin')}
+              <p>${venue.name}<br/>${venue.address}</p>
+              <a href="${venue.directionsUrl}" target="_blank" rel="noopener">Open in Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+
+// ===== src/components/FamilySection.js =====
+// ════════════════════════════════════════════════════════════
+//  MEET THE FAMILY
+// ════════════════════════════════════════════════════════════
+function renderFamily() {
+  const { family } = weddingConfig;
+
+  function renderSide(side) {
+    const members = side.members
+      .map(
+        (m) => `
+        <div class="family-card reveal">
+          <div class="family-photo">${icon('user')}</div>
+          <div class="family-info">
+            <h4>${m.name}</h4>
+            <span class="relation">${m.relation}</span>
+            <p class="message">${m.message}</p>
+          </div>
+        </div>
+      `
+      )
+      .join('');
+    return `
+      <div>
+        <h3 class="family-side-title">${side.title}</h3>
+        <div class="family-members">
+          ${members}
+        </div>
+      </div>
+    `;
+  }
+
+  return `
+    <section class="section family-section" id="family" aria-label="Meet the family">
+      <div class="section-inner">
+        <p class="section-label reveal">Our Roots</p>
+        <h2 class="section-title reveal">${family.heading}</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <div class="family-sides">
+          ${renderSide(family.brideSide)}
+          ${renderSide(family.groomSide)}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+
+// ===== src/components/HashtagSection.js =====
+// ════════════════════════════════════════════════════════════
+//  HASHTAG SECTION
+// ════════════════════════════════════════════════════════════
+function renderHashtag() {
+  const { wedding } = weddingConfig;
+
+  return `
+    <section class="section hashtag-section" id="hashtag" aria-label="Wedding hashtag">
+      <div class="section-inner">
+        <p class="section-label reveal">Spread the Joy</p>
+        <h2 class="section-title reveal">Share Our Happiness</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <div class="hashtag-display reveal">${wedding.hashtag}</div>
+        <button class="btn btn-outline hashtag-copy-btn reveal" id="hashtagCopyBtn" aria-label="Copy hashtag to clipboard">
+          ${icon('copy')} Copy Hashtag
+        </button>
+        <div class="hashtag-copied" id="hashtagCopied">Copied to clipboard!</div>
+      </div>
+    </section>
+  `;
+}
+
+function setupHashtag() {
+  const copyBtn = document.getElementById('hashtagCopyBtn');
+  const copiedMsg = document.getElementById('hashtagCopied');
+  const hashtag = weddingConfig.wedding.hashtag;
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(hashtag);
+    } catch {
+      // Fallback
+      const textarea = document.createElement('textarea');
+      textarea.value = hashtag;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+    }
+    copiedMsg.classList.add('show');
+    setTimeout(() => copiedMsg.classList.remove('show'), 2500);
+  });
+}
+
+// ===== src/components/DressCodeSection.js =====
+// ════════════════════════════════════════════════════════════
+//  DRESS CODE
+// ════════════════════════════════════════════════════════════
+function renderDressCode() {
+  const items = weddingConfig.dressCode
+    .map(
+      (d) => `
+      <div class="dress-card reveal">
+        <div class="dress-event">${d.event}</div>
+        <div class="dress-suggestion">${d.suggestion}</div>
+      </div>
+    `
+    )
+    .join('');
+
+  return `
+    <section class="section dress-section" id="dresscode" aria-label="Dress code">
+      <div class="section-inner">
+        <p class="section-label reveal">Dress to Celebrate</p>
+        <h2 class="section-title reveal">Dress Code</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <p class="section-subtitle reveal">Suggestions to help you prepare for each celebration.</p>
+        <div class="dress-grid">
+          ${items}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+
+// ===== src/components/TravelSection.js =====
+// ════════════════════════════════════════════════════════════
+//  TRAVEL & ACCOMMODATION
+// ════════════════════════════════════════════════════════════
+const travelIcons = {
+  'How to Reach': 'navigation',
+   Accommodation: 'bed',
+  'Contact for Assistance': 'phone',
+};
+
+function renderTravel() {
+  const items = weddingConfig.travel
+    .map((t) => {
+      const iconName = travelIcons[t.title] || 'helpCircle';
+      return `
+        <div class="travel-card reveal">
+          <div class="travel-icon">${icon(iconName)}</div>
+          <div>
+            <h3>${t.title}</h3>
+            <p>${t.content}</p>
+          </div>
+        </div>
+      `;
+    })
+    .join('');
+
+  return `
+    <section class="section travel-section" id="travel" aria-label="Travel and accommodation">
+      <div class="section-inner">
+        <p class="section-label reveal">Plan Your Visit</p>
+        <h2 class="section-title reveal">Travel &amp; Stay</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <p class="section-subtitle reveal">Useful information to help you plan your journey to celebrate with us.</p>
+        <div class="travel-grid">
+          ${items}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+
+// ===== src/components/Guestbook.js =====
+// ════════════════════════════════════════════════════════════
+//  GUESTBOOK — Stores messages in browser localStorage
+// ════════════════════════════════════════════════════════════
+function renderGuestbook() {
+  const { guestbook } = weddingConfig;
+
+  return `
+    <section class="section guestbook-section" id="guestbook" aria-label="Guestbook">
+      <div class="section-inner">
+        <p class="section-label reveal">Share Your Wishes</p>
+        <h2 class="section-title reveal">${guestbook.heading}</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <form class="guestbook-form reveal" id="guestbookForm" novalidate>
+          <div class="form-group">
+            <label for="gbName" class="form-label">Your Name <span class="required">*</span></label>
+            <input type="text" id="gbName" name="gbName" class="form-input" required aria-required="true" />
+            <div class="form-error" id="gbErrName">Please enter your name.</div>
+          </div>
+          <div class="form-group">
+            <label for="gbMessage" class="form-label">Your Message <span class="required">*</span></label>
+            <textarea id="gbMessage" name="gbMessage" class="form-textarea" required aria-required="true" placeholder="Write your wishes for Rupa & Naresh..." maxlength="500"></textarea>
+            <div class="form-error" id="gbErrMessage">Please enter a message.</div>
+          </div>
+          <div class="form-group">
+            <span class="form-label">Add a reaction</span>
+            <div class="emoji-picker" id="emojiPicker">
+              <button type="button" class="emoji-btn" data-emoji="&#10084;">&#10084;</button>
+              <button type="button" class="emoji-btn" data-emoji="&#128150;">&#128150;</button>
+              <button type="button" class="emoji-btn" data-emoji="&#128588;">&#128588;</button>
+              <button type="button" class="emoji-btn" data-emoji="&#127881;">&#127881;</button>
+              <button type="button" class="emoji-btn" data-emoji="&#128591;">&#128591;</button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit-btn" id="gbSubmit">
+            Share Your Wishes
+          </button>
+          <div class="form-message" id="gbMessageBox"></div>
+        </form>
+        <div class="guestbook-entries" id="guestbookEntries" aria-live="polite"></div>
+      </div>
+    </section>
+  `;
+}
+
+function setupGuestbook() {
+  const form = document.getElementById('guestbookForm');
+  const submitBtn = document.getElementById('gbSubmit');
+  const messageBox = document.getElementById('gbMessageBox');
+  const entriesContainer = document.getElementById('guestbookEntries');
+  const emojiPicker = document.getElementById('emojiPicker');
+  let selectedEmoji = null;
+
+  // Emoji selection
+  emojiPicker.addEventListener('click', (e) => {
+    const btn = e.target.closest('.emoji-btn');
+    if (!btn) return;
+    emojiPicker.querySelectorAll('.emoji-btn').forEach((b) => b.classList.remove('selected'));
+    if (selectedEmoji === btn.dataset.emoji) {
+      selectedEmoji = null;
+    } else {
+      selectedEmoji = btn.dataset.emoji;
+      btn.classList.add('selected');
+    }
+  });
+
+  function escapeHTML(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function formatDate(dateStr) {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    });
+  }
+
+  function renderEntries(entries) {
+    if (!entries || entries.length === 0) {
+      entriesContainer.innerHTML = `
+        <p style="text-align:center;color:var(--neutral-400);grid-column:1/-1;padding:2rem;">
+          Be the first to leave a wish for Rupa &amp; Naresh!
+        </p>`;
+      return;
+    }
+
+    entriesContainer.innerHTML = entries
+      .map((entry) => {
+        const initial = entry.guest_name.charAt(0).toUpperCase();
+        const reaction = entry.reaction
+          ? `<span class="entry-reaction">${entry.reaction}</span>`
+          : '';
+        return `
+          <div class="guestbook-entry reveal">
+            <div class="entry-header">
+              <div class="entry-avatar">${escapeHTML(initial)}</div>
+              <span class="entry-name">${escapeHTML(entry.guest_name)}</span>
+              ${reaction}
+            </div>
+            <p class="entry-message">${escapeHTML(entry.message)}</p>
+            <div class="entry-date">${formatDate(entry.created_at)}</div>
+          </div>
+        `;
+      })
+      .join('');
+
+    // Re-trigger reveal for new entries
+    entriesContainer.querySelectorAll('.reveal').forEach((el) => {
+      el.classList.add('visible');
+    });
+  }
+
+  function loadEntries() {
+    try {
+      const entries = JSON.parse(localStorage.getItem('wedding_guestbook') || '[]');
+      renderEntries(entries.slice(0, 20));
+    } catch {
+      renderEntries([]);
+    }
+  }
+
+  function showError(id, show) {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('show', show);
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    showError('gbErrName', false);
+    showError('gbErrMessage', false);
+    messageBox.className = 'form-message';
+    messageBox.textContent = '';
+
+    const name = form.gbName.value.trim();
+    const message = form.gbMessage.value.trim();
+
+    let valid = true;
+    if (!name) {
+      showError('gbErrName', true);
+      valid = false;
+    }
+    if (!message) {
+      showError('gbErrMessage', true);
+      valid = false;
+    }
+    if (!valid) return;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sharing...';
+
+    try {
+      const entries = JSON.parse(localStorage.getItem('wedding_guestbook') || '[]');
+      entries.unshift({
+        guest_name: name,
+        message: message,
+        reaction: selectedEmoji,
+        created_at: new Date().toISOString(),
+      });
+      localStorage.setItem('wedding_guestbook', JSON.stringify(entries.slice(0, 20)));
+
+      messageBox.classList.add('success');
+      messageBox.textContent = 'Thank you for your wishes! Your message has been added.';
+      form.reset();
+      emojiPicker.querySelectorAll('.emoji-btn').forEach((b) => b.classList.remove('selected'));
+      selectedEmoji = null;
+      loadEntries();
+    } catch {
+      messageBox.classList.add('error');
+      messageBox.textContent =
+        'Something went wrong while sharing your message. Please try again.';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Share Your Wishes';
+    }
+  });
+
+  loadEntries();
+}
+
+
+// ===== src/components/ThankYouSection.js =====
+// ════════════════════════════════════════════════════════════
+//  THANK YOU SECTION + BACK TO TOP + FOOTER
+// ════════════════════════════════════════════════════════════
+function renderThankYou() {
+  const { thankYou, wedding } = weddingConfig;
+
+  return `
+    <section class="section thank-you-section" id="thankyou" aria-label="Thank you">
+      <div class="thank-you-content">
+        <div class="thank-you-illustration reveal" aria-hidden="true">
+          <img src="Images/reception.png" alt="Rupa and Naresh">
+        </div>
+        <h2 class="reveal">${thankYou.heading}</h2>
+        <div class="gold-divider reveal"><span>&#10047;</span></div>
+        <p class="reveal">${thankYou.message}</p>
+        <div class="thank-you-signature reveal">${weddingConfig.couple.bride} &amp; ${weddingConfig.couple.groom}</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Made with <span class="footer-heart">&#9825;</span> for ${weddingConfig.couple.bride} &amp; ${weddingConfig.couple.groom}</p>
+      <p style="margin-top:0.3rem;font-size:0.8rem;color:var(--neutral-400);">${wedding.hashtag}</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ${icon('chevronUp')}
+    </button>
+  `;
+}
+
+function setupThankYou() {
+  const backToTop = document.getElementById('backToTop');
+
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (window.scrollY > 600) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    },
+    { passive: true }
+  );
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+
+// ===== src/utils/scrollReveal.js =====
+// ════════════════════════════════════════════════════════════
+//  SCROLL REVEAL — Intersection Observer utility
+// ════════════════════════════════════════════════════════════
+
+function setupScrollReveal() {
+  const prefersReducedMotion = window.matchMedia(
+    '(prefers-reduced-motion: reduce)'
+  ).matches;
+
+  const elements = document.querySelectorAll('.reveal');
+
+  if (prefersReducedMotion) {
+    elements.forEach((el) => el.classList.add('visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px',
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+}
+
+
+// ===== application bootstrap =====
+const app = document.querySelector('#app');
+
+app.innerHTML = `
+  ${renderNavbar()}
+  ${renderHero()}
+  ${renderLoveStory()}
+  ${renderWeddingEvents()}
+  ${renderCountdown()}
+  ${renderScratchCard()}
+  ${renderGallery()}
+  ${renderRSVP()}
+  ${renderVenue()}
+  ${renderFamily()}
+  ${renderHashtag()}
+  ${renderDressCode()}
+  ${renderTravel()}
+  ${renderGuestbook()}
+  ${renderThankYou()}
+`;
+
+setupNavbar();
+setupCountdown();
+setupScratchCard();
+setupGallery();
+setupRSVP();
+setupHashtag();
+setupGuestbook();
+setupThankYou();
+setupScrollReveal();
+
+</script>
+</body>
+</html>
