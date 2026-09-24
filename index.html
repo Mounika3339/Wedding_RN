@@ -1817,6 +1817,199 @@ img {
     animation: none;
   }
 }
+/* ==========================================
+   EXTRA MOBILE-FRIENDLY IMPROVEMENTS
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  /* Prevent horizontal overflow */
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Mobile section spacing */
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  /* Navigation logo */
+  .nav-logo {
+    font-size: 1.25rem;
+  }
+
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Hero section */
+  .hero-content {
+    width: 100%;
+    padding: 5rem 1rem 3rem;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+    overflow-wrap: anywhere;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-invitation {
+    font-size: 0.9rem;
+  }
+
+  /* Hero buttons */
+  .hero-cta {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  /* Hero image */
+  .hero-illustration-wrapper {
+    width: 100%;
+  }
+
+  .hero-photo {
+    max-width: 100%;
+  }
+
+  /* Timeline */
+  .timeline-content {
+    max-width: calc(100% - 1rem);
+    overflow-wrap: anywhere;
+  }
+
+  /* Event cards */
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .gallery-item {
+    border-radius: 10px;
+  }
+
+  /* RSVP and Guestbook */
+  .rsvp-form,
+  .guestbook-form {
+    width: 100%;
+    padding: 1.25rem;
+  }
+
+  /* Venue */
+  .venue-info {
+    padding: 1.25rem;
+  }
+
+  .venue-info h3 {
+    font-size: 1.6rem;
+    overflow-wrap: anywhere;
+  }
+
+  .venue-map,
+  .venue-map iframe {
+    min-height: 280px;
+  }
+
+  /* Family cards */
+  .family-card {
+    align-items: flex-start;
+  }
+
+  /* Form controls */
+  .form-input,
+  .form-select,
+  .form-textarea {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  /* Floating back-to-top button */
+  .back-to-top {
+    width: 42px;
+    height: 42px;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+/* Extra small mobile screens */
+@media (max-width: 480px) {
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-details {
+    gap: 1rem;
+  }
+
+  .hero-detail .value {
+    font-size: 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown-timer {
+    gap: 0.5rem;
+  }
+
+  .countdown-unit {
+    min-width: 60px;
+  }
+
+  .countdown-number {
+    font-size: 1.8rem;
+  }
+
+  .countdown-label {
+    font-size: 0.65rem;
+  }
+
+  .form-radio-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-radio-item {
+    width: 100%;
+  }
+
+  .hashtag-display {
+    font-size: clamp(2rem, 10vw, 3rem);
+    overflow-wrap: anywhere;
+  }
+}
 </style>
 </head>
 <body>
