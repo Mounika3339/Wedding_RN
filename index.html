@@ -11,7 +11,7 @@
 <style>/* ════════════════════════════════════════════════════════════
    RUPA & NARESH — Premium Wedding Website Styles
    ════════════════════════════════════════════════════════════ */
-   
+
 :root {
   /* Color palette */
   --blush-pink: #F4D5DC;
@@ -127,6 +127,48 @@ button {
 img {
   max-width: 100%;
   height: auto;
+}
+@media(max-width:800px){
+    .nav-inner{
+        padding:15px 20px
+    }
+
+    .menu-toggle{
+        display:block
+    }
+
+    .nav-links{
+        display:none;
+        ...
+    }
+
+    .hero-inner,
+    .blessing-grid,
+    .about-grid,
+    .location-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-inner{
+        padding-top:70px;
+        text-align:center;
+    }
+
+    .hero-meta{
+        justify-content:center;
+    }
+
+    .detail-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .timer{
+        gap:8px;
+    }
 }
 
 /* ═══ Layout ═══ */
@@ -368,9 +410,6 @@ img {
   z-index: 2;
 }
 
-.hero-text {
-  text-align: left;
-}
 
 .hero-label {
   font-size: 0.8rem;
@@ -434,6 +473,8 @@ img {
 
 .hero-cta {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: var(--space-2);
   flex-wrap: wrap;
 }
@@ -1679,10 +1720,16 @@ img {
 /* ═══ Responsive ═══ */
 @media (max-width: 1024px) {
   .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: var(--space-4);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--space-8) var(--space-2);
+  position: relative;
+  z-index: 2;
+}
   .hero-photo {
   width: 280px;
   height: 360px;
@@ -1699,18 +1746,30 @@ img {
   display: block;
   }
   .hero-text {
-    text-align: center;
-  }
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
   .hero-subtitle, .hero-invitation {
     margin-left: auto;
     margin-right: auto;
   }
+
   .hero-details {
-    justify-content: center;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
   }
   .hero-cta {
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
   .hero-illustration-wrapper svg {
     max-width: 300px;
   }
@@ -1847,10 +1906,22 @@ img {
 
   /* Hero section */
   .hero-content {
-    width: 100%;
-    padding: 5rem 1rem 3rem;
-    gap: 2rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--space-8) var(--space-2);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
 
   .hero-title {
     font-size: clamp(2rem, 10vw, 3.5rem);
@@ -1858,12 +1929,19 @@ img {
   }
 
   .hero-subtitle {
-    font-size: 1rem;
-  }
+  font-size: 1.25rem;
+  color: var(--neutral-600);
+  margin: 0 auto var(--space-3);
+  max-width: 600px;
+}
 
   .hero-invitation {
-    font-size: 0.9rem;
-  }
+  font-style: italic;
+  color: var(--neutral-600);
+  margin: 0 auto var(--space-4);
+  max-width: 650px;
+  font-size: 1rem;
+}
 
   /* Hero buttons */
   .hero-cta {
@@ -1956,6 +2034,66 @@ img {
     bottom: 1rem;
   }
 }
+/* ===== FORCE HERO CONTENT TO CENTER ===== */
+
+.hero {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.hero-content {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 100vh !important;
+  padding: 100px 20px 40px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.hero-text {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.hero-label,
+.hero-title,
+.hero-subtitle,
+.hero-invitation {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-subtitle {
+  max-width: 650px !important;
+}
+
+.hero-invitation {
+  max-width: 700px !important;
+}
+
+.hero-details {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 32px !important;
+}
+
+.hero-cta {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}
 
 /* Extra small mobile screens */
 @media (max-width: 480px) {
@@ -1969,8 +2107,13 @@ img {
   }
 
   .hero-details {
-    gap: 1rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
 
   .hero-detail .value {
     font-size: 1rem;
@@ -2473,18 +2616,6 @@ function wrapSVG(content, bgGrad1, bgGrad2, decorations) {
 }
 
 // ════════════════════════════════════════════════════════════
-//  HERO ILLUSTRATION
-// ════════════════════════════════════════════════════════════
-
-function heroIllustration() {
-  return `
-    <div class="hero-photo">
-      <img src="Images/haldi.avif" alt="Haldi ceremony">
-    </div>
-  `;
-}
-
-// ════════════════════════════════════════════════════════════
 //  HALDI
 // ════════════════════════════════════════════════════════════
 
@@ -2662,9 +2793,6 @@ function renderHero() {
             <a href="#events" class="btn btn-outline">Wedding Events</a>
             <a href="#rsvp" class="btn btn-gold">RSVP</a>
           </div>
-        </div>
-        <div class="hero-illustration-wrapper reveal" aria-label="Illustration of Rupa and Naresh in traditional Indian wedding attire">
-          ${heroIllustration()}
         </div>
       </div>
     </section>
